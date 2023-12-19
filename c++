@@ -1,4 +1,4 @@
-- [x] 1. Sum of Two Numbers: Write a program that takes two integers as input and calculates their sum. Print the result.
+1. Sum of Two Numbers: Write a program that takes two integers as input and calculates their sum. Print the result.
   int main()
  {
     int num1 = 0;
@@ -13,7 +13,7 @@
     return 0;
   }
 
-- [x]  2. Average of Three Numbers: Create a program that computes the average of three integers. Print the average.
+2. Average of Three Numbers: Create a program that computes the average of three integers. Print the average.
 
 
 int main()
@@ -39,7 +39,7 @@ int main()
 }
 
 
-- [x] 3. Multiplication Table: Generate and print the multiplication table for a given number. Take the number as input and print its multiplication table from 1 to 10.
+3. Multiplication Table: Generate and print the multiplication table for a given number. Take the number as input and print its multiplication table from 1 to 10.
 
 int main()
 {
@@ -54,7 +54,7 @@ int main()
 }
 
 
-- [x] 4. Uppercase to Lowercase: Write a program that perform simple character manipulations, such as converting uppercase letters to lowercase.
+4. Uppercase to Lowercase: Write a program that perform simple character manipulations, such as converting uppercase letters to lowercase.
 
 int main()
 {
@@ -69,7 +69,7 @@ int main()
     return 0;
 }
 
-- [x] 5. Ստեղծել sym անունով char տիպի փոփոխական։ Գրել ծրագիր, որը օգտվողին թույլ կտա մուտքագրել sym անունով փոփոխականի արժեքը։ Տպել էկրանին true եթե մուտքագրված սիմվոլը թվանշան է հակառակ դեպքում տպել false:
+5. Ստեղծել sym անունով char տիպի փոփոխական։ Գրել ծրագիր, որը օգտվողին թույլ կտա մուտքագրել sym անունով փոփոխականի արժեքը։ Տպել էկրանին true եթե մուտքագրված սիմվոլը թվանշան է հակառակ դեպքում տպել false:
 int main()
 {
     char sym;
@@ -86,7 +86,7 @@ int main()
 
 && sym-y partadir petqa mec lini 0 ic ev poqr 9 ic
 
-- [x] 6. Գրել ծրագիր, որը թույլ կտա օգտվողին մուտքագրել թիվ, ստուգել և տպել՝ արդյոք թիվը զույգ է, թե կենտ:
+6. Գրել ծրագիր, որը թույլ կտա օգտվողին մուտքագրել թիվ, ստուգել և տպել՝ արդյոք թիվը զույգ է, թե կենտ:
 int main()
 {
     int a {};
@@ -101,7 +101,7 @@ int main()
     return 0;
 }
 
-- [x] 7. Գրել ծրագիր, որը թույլ կտա օգտվողին մուտքագրել տառ, ստուգել և տպել տառը բաղաձայն է, թե ձայնավոր:
+7. Գրել ծրագիր, որը թույլ կտա օգտվողին մուտքագրել տառ, ստուգել և տպել տառը բաղաձայն է, թե ձայնավոր:
 
 Xndri algorithm.
 Tolower  -function e, vory yndunum e nishy vorpes argument ev veracum poqratareri, ete ayn mecatar e. Isk ete nishn arden poqratar e uremn mnum e anpopox.
@@ -138,7 +138,7 @@ int main()
 }
 
 
-- [x] 8. Գրել ծրագիր, որը թույլ կտա օգտվողին մուտքագրել երկու թիվ, ստուգել և տպել դրանցից ամենամեծը:
+8. Գրել ծրագիր, որը թույլ կտա օգտվողին մուտքագրել երկու թիվ, ստուգել և տպել դրանցից ամենամեծը:
       
       int main()
 {
@@ -157,7 +157,7 @@ int main()
 
 
 
-- [x] 9. Գրել ծրագիր, որը թույլ կտա օգտվողին մուտքագրել երեք թվեր, եթե երեք թվերից 2-ը հավասար են՝ տպել այդ երեք թվերից ամենամեծը
+9. Գրել ծրագիր, որը թույլ կտա օգտվողին մուտքագրել երեք թվեր, եթե երեք թվերից 2-ը հավասար են՝ տպել այդ երեք թվերից ամենամեծը
    evenCount variable- ogtagorcvum e hetevelu hamar, te tveric qanisn en zuyg
 
 int main()
@@ -194,7 +194,7 @@ int main()
     return 0;
 }
 
-- [x] 10. Գրել ծրագիր, որը օգտվողին թույլ կտա մուտքագրել չորս թիվ, եթե այդ թվերի գումարը հավասար է 0-ի՝ տպել նրանցից ամենափոքրը
+10. Գրել ծրագիր, որը օգտվողին թույլ կտա մուտքագրել չորս թիվ, եթե այդ թվերի գումարը հավասար է 0-ի՝ տպել նրանցից ամենափոքրը
 
 int num1, num2, num3, num4;
     std::cout << "please enter the first number: ";
@@ -249,7 +249,7 @@ int main()
 }
 
 
-- [x] 12. Գրել ծրագիր, որը օգտվողին թույլ կտա մուտքագրել երկու սիմվոլները, ստուգեք արդյոք սիմվոլները արտահայտում են նույն տառի մեծատառ և փոքրատառ տեսքերը, թե ոչ։
+12. Գրել ծրագիր, որը օգտվողին թույլ կտա մուտքագրել երկու սիմվոլները, ստուգեք արդյոք սիմվոլները արտահայտում են նույն տառի մեծատառ և փոքրատառ տեսքերը, թե ոչ։
 
 std::tolower - ogtagorcvum e character-y poqrartari hamarjeqin poxakerpelu hamar
 
@@ -277,7 +277,7 @@ int main()
 }
 
 
-- [x] 13. Գրել ծրագիր, որը օգտվողին թույլ կտա մուտքագրել թիվ, և հաշվել նրա ֆակտորիալը:
+13. Գրել ծրագիր, որը օգտվողին թույլ կտա մուտքագրել թիվ, և հաշվել նրա ֆակտորիալը:
 
 int main()
 {
