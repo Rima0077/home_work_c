@@ -75,7 +75,7 @@ int main()
     char sym;
     std::cout <<"Please enter the character: ";
     std::cin >> sym;
-    if(sym > '0' && sym < '9'){
+    if(sym >= '0' && sym =< '9'){
         std::cout << "true";
     }else{
         std::cout << "false"; 
