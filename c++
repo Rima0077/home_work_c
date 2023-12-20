@@ -342,9 +342,45 @@ int main()
 
 18. Գրել ծրագիր, որը օգտվողին թույլ կտա մուտքագրել թիվ և պարզել արդյո՞ք թիվը 3֊ի աստիճան է, թե ոչ։
 
+int main()
+{
+    int num = 0;
+    std::cout << "please enter the number: ";
+    std::cin >> num;
+    
+    int temp = num;
+    while(temp % 3 == 0){
+        temp /= 3;
+    }
+    
+    if(temp == 1){
+        std::cout << num << " is power of 3 ";
+    }else{
+        std::cout << num << " is not a power of 3 ";
+    }
+
+    return 0;
+}
 19. Գրել ծրագիր, որը օգտվողին թույլ կտա մուտքագրել թիվ և պարզել արդյո՞ք թվի երկուական տեսքի ավագ և կրտսեր բիթերը համընկնում են, թե ոչ։
 
 20. Գրել ծրագիր, որը օգտվողին թույլ կտա մուտքագրել 0-ից 7 թվերից որևէ մեկը, և տպել էկրանին մուտքագրված թվին համապատասխանող շաբաթվա օրը։
+int main()
+{
+    int dayNumber;
+    std::cout << "Please enter a number (0-7): ";
+    std::cin >> dayNumber;
+    
+    if(dayNumber >=0 && dayNumber <= 6){
+        std::string days[] = {"Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"};
+        std::cout << "The day corresponding to the number " << dayNumber << " is: " << days[dayNumber];
+    }else if(dayNumber == 7){
+        std::cout << "The number 7 corresponds to no specific day (out of range)." << std::endl;
+    }else{
+        std::cout << "Invalid input! Please enter a number between 0 and 7." << std::endl;
+    }
+
+    return 0;
+}
 21. Գրեք ծրագիր, որը հաշվարկում և տպում է տվյալ ամբողջ թվով զանգվածի բոլոր տարրերի գումարը:
 22. Ստեղծեք ծրագիր, որը հաշվարկում և տպում է տվյալ ամբողջ թվով զանգվածի տարրերի միջինը (միջինը):
 23. Գրեք ծրագիր, որը գտնում և տպում է առավելագույն արժեքը ամբողջ թվով զանգվածում:
