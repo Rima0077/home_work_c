@@ -11,6 +11,7 @@ int main()
                 std::cin >> sym;
         }while(sym < 'A' || sym > 'Z');
 
+
         sym += 32;
         std::cout << sym << std::endl;
 
