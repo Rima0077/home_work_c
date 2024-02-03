@@ -323,7 +323,26 @@ int main()
 }
 
 16. Գրել ծրագիր, որը օգտվողին թույլ կտա մուտքագրել թիվ և էկրանին տպել մուտքագրված թվի reverse տարբերակը (Օր․՝ 1234 -> 4321)։
- 
+
+#include <iostream>
+
+int main()
+{
+        int num;
+        int rev = 0;
+        std::cout << "Enter the number: ";
+        std::cin >> num;
+
+
+        while(num){
+                int digit = num % 10;
+                rev = rev * 10 + digit;
+                num /= 10;
+        }
+        std::cout << rev << std::endl;
+
+        return 0;
+}
 17. Գրել ծրագիր, որը օգտվողին թույլ կտա մուտքագրել թիվ և պարզել արդյո՞ք թիվը պարզ է, թե ոչ։
 
 int main()
