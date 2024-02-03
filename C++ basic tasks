@@ -307,16 +307,124 @@ int main()
 
 14.Գրել ծրագիր, որը օգտվողին թույլ կտա մուտքագրել թիվ և պարզել արդյո՞ք թիվը 3֊ի աստիճան է, թե ոչ։
 
+int main()
+{
+        int num = 0;
+        std::cout << "Enter the number: ";
+        std::cin >> num;
 
+        if(num <= 0){
+                std::cout << "is not a power of 3" << std::endl;
+        } else {
+                while(num % 3 == 0){
+                        num /= 3;
+                }
+        }
+
+        if(num == 1){
+                std::cout << "is a power of 3." << std::endl;
+        } else {
+                std::cout << "is not a power of 3." << std::endl;
+        }
+
+        return 0;
+}
 
 15.Գրել ծրագիր, որը օգտվողին թույլ կտա մուտքագրել 0-ից 7 թվերից որևէ մեկը, և տպել էկրանին մուտքագրված թվին համապատասխանող շաբաթվա օրը։
 
+int main()
+{
+        int num = 0;
+        std::cout << "Enter the number: ";
+        std::cin >> num;
 
+        switch(num){
+                case 1:
+                        std::cout << "Monday ";
+                        break;
+                case 2:
+                        std::cout << "Tuesday ";
+                        break;
+                case 3:
+                        std::cout << "Wednesday ";
+                        break;
+                case 4:
+                        std::cout << "Thursday ";
+                        break;
+                case 5:
+                        std::cout << "Friday ";
+                        break;
+                case 6:
+                        std::cout << "Saturday ";
+                        break;
+                case 7:
+                        std::cout << "Sunday ";
+                        break;
+                default:
+                        std::cout << "False ";
+                        break;
+        }
+
+        return 0;
+}
 
 16. Polindrome
 
+#include <iostream>
+
+std::string is_polindrome(std::string pol){
+        for(int i = 0; i < pol.length() / 2; ++i){
+                if(pol[i] != pol[pol.length() - i - 1]){
+                        return "Non polindrome ";
+                }
+        }
+        return "Yes polindrome";
+}
+
+int main()
+{
+        std::string pol;
+        std::cin >> pol;
+        std::cout << is_polindrome(pol);
+
+        return 0;
+}
+
 
 19. Palindrome array
+
+#include <iostream>
+
+int polindrome(int arr[], int size){
+        for(int i = 0; i < size / 2; ++i){
+                if(arr[i] != arr[size - i - 1]){
+                        return 0;
+                }
+        }
+        return 1;
+}
+
+int main()
+{
+        int size = 0;
+        std::cout << "Enter the array size: ";
+        std::cin >> size;
+        int* arr = new int[size];
+
+        for(int i = 0; i < size; ++i){
+                std::cout << "Enter array elements: ";
+                std::cin >> arr[i];
+        }
+
+        if(polindrome(arr, size)){
+                std::cout << "Yes polindrome !!!";
+        } else {
+                std::cout << "Non polindrome !!!";
+        }
+
+        delete []arr;
+        return 0;
+}
 
 20. palindrome vector
 
