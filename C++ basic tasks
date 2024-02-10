@@ -30,7 +30,7 @@ int main()
         std::cout << "Enter the letter: ";
         std::cin >> sym;
 
-        if(sym > '0' && sym < '9'){
+        if(sym >= '0' && sym <= '9'){
                 std::cout << "True" << std::endl;
         } else {
                 std::cout << "False" << std::endl;
