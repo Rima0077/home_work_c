@@ -401,10 +401,134 @@ int main()
     return 0;
 }
 21. Գրեք ծրագիր, որը հաշվարկում և տպում է տվյալ ամբողջ թվով զանգվածի բոլոր տարրերի գումարը:
+
+#include <iostream>
+
+int main()
+{
+        const size_t size = 7;
+        int arr[size];
+        for(int i = 0; i < size; ++i){
+                arr[i] = rand()%10;
+                std::cout << arr[i];
+        }
+        std::cout << std::endl;
+
+        int sum = 0;
+        for(int i = 0; i < size; ++i){
+                sum += arr[i];
+        }
+
+        std::cout << "Array sum =  " << sum << std::endl;
+
+        return 0;
+}
+
 22. Ստեղծեք ծրագիր, որը հաշվարկում և տպում է տվյալ ամբողջ թվով զանգվածի տարրերի միջինը (միջինը):
+
+#include <iostream>
+
+int main()
+{
+        const size_t size = 7;
+        int arr[size];
+        for(int i = 0; i < size; ++i){
+                arr[i] = rand()%10;
+                std::cout << arr[i];
+        }
+
+        std::cout << std::endl;
+
+        int sum = 0;
+        for(int i = 0; i < size; ++i){
+                sum += arr[i];
+        }
+        sum /= size;
+        std::cout << sum;
+}
 23. Գրեք ծրագիր, որը գտնում և տպում է առավելագույն արժեքը ամբողջ թվով զանգվածում:
+
+#include <iostream>
+
+int main()
+{
+        const size_t size = 7;
+        int arr[size];
+        for(int i = 0; i < size; ++i){
+                arr[i] = rand()%10;
+                std::cout << arr[i];
+        }
+
+        std::cout << std::endl;
+
+        int max = arr[0];
+        for(int i = 0; i < size; ++i){
+                if(arr[i] > max){
+                        max = arr[i];
+                }
+        }
+
+        std::cout << "MAX element is " << max << std::endl;
+}
+
 24. Մշակեք ծրագիր, որը գտնում և տպում է նվազագույն արժեքը ամբողջ թվով զանգվածում:
+
+#include <iostream>
+
+int main()
+{
+        const size_t size = 7;
+        int arr[size];
+        for(int i = 0; i < size; ++i){
+                arr[i] = rand()%10;
+                std::cout << arr[i];
+        }
+
+        std::cout << std::endl;
+
+        int min = arr[0];
+        for(int i = 0; i < size; ++i){
+                if(arr[i] < min){
+                        min = arr[i];
+                }
+        }
+
+        std::cout << "MIN element is " << min << std::endl;
+}
 25. Իրականացնել ծրագիր, որը որոնում է որոշակի ամբողջ արժեք զանգվածում: Եթե արժեքը գտնվի, տպեք դրա ինդեքսը. հակառակ դեպքում նշեք, որ արժեքը զանգվածում չէ:
+
+int main()
+{
+        const size_t size = 7;
+        int arr[size];
+
+        for(int i = 0; i < size; ++i){
+                arr[i] = rand()%10;
+                std::cout << arr[i];
+        }
+
+        std::cout << std::endl;
+
+        int value = 0;
+        std::cout << "enter the value: ";
+        std::cin >> value;
+
+        int index = -1;
+        for(int i = 0; i < size; ++i) {
+                if(arr[i] == value){
+                        index = i;
+                        break;
+                }
+        }
+
+        if(index != -1){
+                std::cout << "value " << value << " found at index " << index << std::endl;
+        } else{
+                std::cout << "value " << value << " not found in the array." << std::endl;
+        }
+
+        return 0;
+}
 26. Գրեք ծրագիր, որը տեսակավորում է ամբողջ թվով զանգվածի տարրերը աճման կարգով` օգտագործելով սովորական տեսակավորման ալգորիթմը, ինչպիսին է փուչիկների տեսակավորումը կամ ընտրության տեսակավորումը: Տպեք տեսակավորված զանգվածը։
        (Bubble sort, selection sort)
 27. Ստեղծեք ծրագիր, որը հակադարձում է ամբողջ թվային զանգվածի տարրերը և տպում հակադարձ զանգվածը:
